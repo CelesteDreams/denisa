@@ -1,10 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int function(int x){
-	x=x-2;
-	x=function(x);
+int function(int x)
+{
+ 
+	int a;
+	if(x>0)
+{
+	x=function(x-2);
+}	
+else
 	return x;
+	
 }
 
 int main(){
